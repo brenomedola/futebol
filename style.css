@@ -1,0 +1,285 @@
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.navigation-wrapper {
+  position: relative;
+  height: auto;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 120px;
+  fill: #999999;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 10%;
+}
+
+.arrow--right {
+  left: auto;
+  right: 10%;
+}
+
+.arrow--disabled {
+  fill: #999999;
+  opacity: 50%;
+}
+
+.header-copa-lencoense {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #06AA48;
+  padding: 1em;
+}
+
+.header-recopa {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #3361ae;
+  padding: 1em;
+}
+
+.fase {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 1em 0;
+  font-size: 24px;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grupo {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 1em 0;
+}
+
+#table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#table-col-class {
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  text-align: left;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding: 15px 10px;
+}
+
+#table-col {
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  width: 40px;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding: 15px 0;
+  text-align: center;
+}
+
+#table-col:nth-child(even) {
+  background-color: #F5F5F5;
+}
+
+.pos-fase {
+  color: #06AA48;
+  width: 15px;
+  text-align: center;
+  border-bottom: 1px solid #999999;
+}
+
+.pos-recopa {
+  color: #3361ae;
+  text-align: center;
+  border-bottom: 1px solid #999999;
+}
+
+#nome-time {
+  border-bottom: 1px solid #999999;
+  width: 200px;
+  padding: 15px 15px;
+  text-align: left;
+}
+
+#num {
+  border-bottom: 1px solid #999999;
+  padding: 15px 0;
+  text-align: center;
+}
+
+#num:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
+.square-blue {
+  color: #3361ae;
+  margin-left: 10px;
+}
+
+.square-green {
+  color: #06AA48;
+  margin-left: 5px;
+}
+
+.legenda {
+  font-size: 12px;
+  color: #999999;
+}
+
+#jogos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+#lista-jogos {
+  margin: 20px 0;
+  width: 30%;
+}
+
+#infos {
+  text-align: center;
+}
+
+.info-data, .info-hora {
+  font-weight: bold;
+}
+
+.info {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#placar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  border-bottom: 1px solid #999999;
+}
+
+.equipe-sigla, .placar-box, .placar-penalti {
+  margin-bottom: 21px;
+}
+
+.equipes-escudo {
+  margin: 0 10px;
+}
+
+.placar-box {
+  font-weight: bold;
+  font-size: 26px;
+  margin: 0 5px;
+}
+
+.placar-vs {
+  margin: 0 10px 21px;
+}
+
+.placar-penalti {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#lista-jogos-fase-final {
+  margin: 20px 0;
+  width: 45%;
+}
+
+#placar-fase-final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  border-bottom: 1px solid #999999;
+  padding-bottom: .5em;
+}
+
+#ranking-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  text-align: left;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding: 15px 10px;
+}
+
+#ranking-content {
+  box-sizing: content-box;
+  overflow: auto;
+  height: 430px;
+}
+
+#ranking-item-wrapper {
+  border-bottom: 1px solid #999999;
+  display: flex;
+  align-items: center;
+  height: 78px;
+  width: 98%;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+
+#jogador-posicao {
+  font-size: 30px;
+  color: #999999;
+}
+
+#jogador {
+  display: flex;
+  align-items: center;
+}
+
+#jogador-escudo {
+  margin: 0 15px;
+}
+
+#jogador-gols {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#jogos-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  #jogos {
+    flex-direction: column;
+  }
+  #lista-jogos {
+    width: 100%;
+  }
+  .pos-fase {
+    width: 10px;
+  }
+  #nome-time {
+    width: 100px;
+  }
+  #lista-jogos-fase-final {
+    width: 100%;
+  }
+}
